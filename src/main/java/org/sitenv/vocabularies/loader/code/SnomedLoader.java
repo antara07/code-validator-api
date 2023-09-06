@@ -35,6 +35,7 @@ public class SnomedLoader extends BaseCodeLoader implements VocabularyLoader {
             for (File file : filesToLoad) {
                 if (file.isFile() && !file.isHidden()) {
                     logger.debug("Loading SNOMED File: " + file.getName());
+                    logger.info("testing")
                     String codeSystem = file.getParentFile().getName();
                     int count = 0;
                     fileReader = new FileReader(file);
